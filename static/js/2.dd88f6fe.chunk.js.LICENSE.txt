@@ -43,8 +43,6 @@ object-assign
  * Date: 2019-05-01T21:04Z
  */
 
-/*! safe-buffer. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
-
 /**
  * A better abstraction over CSS.
  *
