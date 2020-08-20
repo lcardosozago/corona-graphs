@@ -1,0 +1,12 @@
+[
+    {
+        "city": "Dourados",
+        "details": "Óbito de homem de 56 anos ocorreu no estado do Tocantins",
+        "status": "death"
+    },
+    {
+        "city": "Vicentina",
+        "details": "Óbito de homem de 62 anos ocorreu no estado de São Paulo",
+        "status": "death"
+    }
+]

@@ -1,0 +1,15 @@
+@import-normalize;
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.CGNewsColorHighlight {
+    color: #68B817;
+}
+
+div.divisor {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    border-top: 1px solid #ccc;
+}

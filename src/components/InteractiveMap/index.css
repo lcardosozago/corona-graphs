@@ -1,0 +1,61 @@
+.p {
+  text-align: center;
+}
+
+.map svg {
+  height: 400px;
+  width: 100%;
+  display: block;
+}
+
+.map g path {
+  fill: #ccc;
+  stroke: #555;
+  stroke-width: 0;
+}
+
+.map g path:hover {
+  fill: #cedd00 !important;
+  cursor: help;
+  stroke-width: 3;
+}
+
+.info_panel {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  font-size: 12px;
+  position: absolute;
+  border: 1px solid #333;
+  color: #333;
+  white-space: nowrap;
+}
+
+.info_panel::first-line {
+  font-weight: bold;
+}
+
+.info_panel_city {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.info_panel_confirmed_cases {
+  font-size: 1rem;
+  color: #333;
+}
+
+.info_panel_deaths {
+  font-size: 1rem;
+  color: #333;
+}
+
+.info_panel_population {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+@media only screen and (max-width: 600px) {
+  .map svg {
+    height: 250px;
+  }
+}
