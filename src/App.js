@@ -43,7 +43,7 @@ function App() {
       setShowContent(false);
     }
 
-    setShowCsvData(false);
+    //setShowCsvData(false);
 
     const lastTotalCase = totalCases[totalCases.length - 1];
     const [year, month, day] = lastTotalCase.date.split("-");
