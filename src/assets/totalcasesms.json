@@ -1244,5 +1244,12 @@
     "confirmed": 46261,
     "deaths": 800,
     "healed": 38103
+  },
+  {
+    "date": "2020-08-28",
+    "suspects": 4963,
+    "confirmed": 47152,
+    "deaths": 823,
+    "healed": 39644
   }
 ]
