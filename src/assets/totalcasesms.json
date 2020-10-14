@@ -1573,5 +1573,12 @@
     "confirmed": 75076,
     "deaths": 1449,
     "healed": 69771
+  },
+  {
+    "date": "2020-10-14",
+    "suspects": 3687,
+    "confirmed": 75561,
+    "deaths": 1464,
+    "healed": 70007
   }
 ]
