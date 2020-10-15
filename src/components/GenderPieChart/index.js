@@ -6,12 +6,14 @@ import ApplicationContext from "../../contexts/ApplicationContext";
 export default function GenderPieChart() {
   const initialData = ["Gênero", "Casos de COVID-19"];
   const [data, setData] = useState([initialData]);
+  const [graphColors, setGraphColors] = useState([]);
   const { selectedCity, lastUpdateDate, sex, sexPerCity } = useContext(
     ApplicationContext
   );
 
   useEffect(() => {
     var dataArr = [initialData];
+    var newGraphColors = [];
 
     if (selectedCity.code) {
       for (let city in sexPerCity) {
@@ -38,7 +40,16 @@ export default function GenderPieChart() {
       }
     }
 
+    if (dataArr[1] && dataArr[1][0] === 'Mulheres') {
+      newGraphColors.push("#ed0000");
+      newGraphColors.push("#3366CC");
+    } else if (dataArr[1] && dataArr[1][0] === 'Homens') {
+      newGraphColors.push("#3366CC");
+      newGraphColors.push("#ed0000");
+    }
+
     setData(dataArr);
+    setGraphColors(newGraphColors);
   }, [selectedCity, sex, sexPerCity]);
 
   return (
@@ -69,6 +80,7 @@ export default function GenderPieChart() {
           data={data}
           options={{
             legend: { position: "bottom", alignment: "center", textStyle: {fontSize: 10} },
+            colors: [ graphColors[0], graphColors[1] ],
             chartArea: { left: "0", width: "100%", height: "80%" },
           }}
         />
