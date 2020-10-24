@@ -7,7 +7,6 @@ import TotalCasesLineChart from "./components/TotalCasesLineChart";
 import CityCasesAndDeathsBarChart from "./components/CityCasesAndDeathsBarChart";
 import CasesPerCityBarChart from "./components/CasesPerCityBarChart";
 import DeathsPerCityBarChart from "./components/DeathsPerCityBarChart";
-import DeathObservationTable from "./components/DeathObservationTable";
 import InteractiveMap from "./components/InteractiveMap";
 
 import ApplicationContext from "./contexts/ApplicationContext";
@@ -239,7 +238,6 @@ function App() {
                   <CasesPerCityBarChart />
                   <div className="divisor" />
                   <DeathsPerCityBarChart />
-                  <DeathObservationTable />
                   <div className="divisor" />
                 </>
               )}
