@@ -3,12 +3,13 @@ import Chart from "react-google-charts";
 
 import ApplicationContext from "../../contexts/ApplicationContext";
 
+const initialData = [
+  "Idade",
+  "Casos de COVID-19",
+  { type: "number", role: "annotation" },
+];
+
 export default function AgeBarChart() {
-  const initialData = [
-    "Idade",
-    "Casos de COVID-19",
-    { type: "number", role: "annotation" },
-  ];
   const [data, setData] = useState([initialData]);
   const {
     selectedCity,

@@ -3,8 +3,9 @@ import Chart from "react-google-charts";
 
 import ApplicationContext from "../../contexts/ApplicationContext";
 
+const initialData = ["Gênero", "Casos de COVID-19"];
+
 export default function GenderPieChart() {
-  const initialData = ["Gênero", "Casos de COVID-19"];
   const [data, setData] = useState([initialData]);
   const [graphColors, setGraphColors] = useState([]);
   const { selectedCity, lastUpdateDate, sex, sexPerCity } = useContext(

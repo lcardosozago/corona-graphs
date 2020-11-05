@@ -5,19 +5,19 @@ import ApplicationContext from "../../contexts/ApplicationContext";
 
 import totalCases from "../../assets/totalcasesms.json";
 
-export default function TotalCasesLineChart() {
-  const initialData = [
-    "Data",
-    "Suspeitos",
-    { type: "string", role: "annotation" },
-    "Confirmados",
-    { type: "string", role: "annotation" },
-    "Óbitos",
-    { type: "string", role: "annotation" },
-    "Curados",
-    { type: "string", role: "annotation" },
-  ];
+const initialData = [
+  "Data",
+  "Suspeitos",
+  { type: "string", role: "annotation" },
+  "Confirmados",
+  { type: "string", role: "annotation" },
+  "Óbitos",
+  { type: "string", role: "annotation" },
+  "Curados",
+  { type: "string", role: "annotation" },
+];
 
+export default function TotalCasesLineChart() {
   const [data, setData] = useState(initialData);
   const { lastUpdateDate } = useContext(ApplicationContext);
 

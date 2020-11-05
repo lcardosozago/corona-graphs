@@ -3,16 +3,17 @@ import Chart from "react-google-charts";
 
 import ApplicationContext from "../../contexts/ApplicationContext";
 
+const initialData = [
+  "Cidade",
+  "Confirmados",
+  { type: "number", role: "annotation" },
+  "Recuperados",
+  { type: "number", role: "annotation" },
+  "Óbitos",
+  { type: "number", role: "annotation" },
+];
+
 export default function CityCasesAndDeathsBarChart() {
-  const initialData = [
-    "Cidade",
-    "Confirmados",
-    { type: "number", role: "annotation" },
-    "Recuperados",
-    { type: "number", role: "annotation" },
-    "Óbitos",
-    { type: "number", role: "annotation" },
-  ];
 
   const [data, setData] = useState([initialData]);
   const [maxValue, setMaxValue] = useState(0);

@@ -212,7 +212,7 @@ export default function InteractiveMap() {
 
       $(".info_panel").remove();
     });
-  }, [contentWidth, contentHeight, casesPerCity]);
+  }, [contentWidth, contentHeight, casesPerCity, setSelectedCity]);
 
   function handleClickClearCityButton(e) {
     e.preventDefault();

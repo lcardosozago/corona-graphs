@@ -3,12 +3,13 @@ import Chart from "react-google-charts";
 
 import ApplicationContext from "../../contexts/ApplicationContext";
 
+const initialData = [
+  "Cidade",
+  "Óbitos",
+  { type: "number", role: "annotation" },
+];
+
 export default function DeathsPerCityBarChart() {
-  const initialData = [
-    "Cidade",
-    "Óbitos",
-    { type: "number", role: "annotation" },
-  ];
 
   const [data, setData] = useState([initialData]);
   const { lastUpdateDate, casesPerCity } = useContext(ApplicationContext);
