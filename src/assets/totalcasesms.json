@@ -1923,5 +1923,12 @@
     "confirmed": 101102,
     "deaths": 1793,
     "healed": 87633
+  },
+  {
+    "date": "2020-12-03",
+    "suspects": 8655,
+    "confirmed": 102236,
+    "deaths": 1804,
+    "healed": 88388
   }
 ]
