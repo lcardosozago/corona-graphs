@@ -1958,5 +1958,12 @@
     "confirmed": 105246,
     "deaths": 1841,
     "healed": 91740
+  },
+  {
+    "date": "2020-12-08",
+    "suspects": 7997,
+    "confirmed": 107235,
+    "deaths": 1852,
+    "healed": 92432
   }
 ]
