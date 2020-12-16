@@ -2014,5 +2014,12 @@
     "confirmed": 114631,
     "deaths": 1967,
     "healed": 99082
+  },
+  {
+    "date": "2020-12-16",
+    "suspects": 8832,
+    "confirmed": 116612,
+    "deaths": 1978,
+    "healed": 99658
   }
 ]
